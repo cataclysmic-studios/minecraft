@@ -14,7 +14,7 @@ export class InitializationController implements OnStart, OnCharacterAdd {
 
   public onStart(): void {
     Events.data.initialize();
-    this.camera.set("Default"); // set to preferred camera
+    this.camera.set("FirstPerson"); // set to preferred camera
   }
 
   public onCharacterAdd(character: CharacterModel): void {
